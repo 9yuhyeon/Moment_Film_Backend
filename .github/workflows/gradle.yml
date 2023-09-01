@@ -50,7 +50,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Docker Image Build
-        run: docker build -f Dockerfile -t ${{ secrets.DOCKER_REPO }}/moment_film-spring .
+        run: docker build -f Dockerfile -t ${{ secrets.DOCKER_REPO }}/moment-film-spring .
 
       - name: DockerHub Push
         run: docker push ${{ secrets.DOCKER_REPO }}/moment_film-spring
