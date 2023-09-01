@@ -53,7 +53,7 @@ jobs:
         run: docker build -f Dockerfile -t ${{ secrets.DOCKER_REPO }}/moment-film-spring .
 
       - name: DockerHub Push
-        run: docker push ${{ secrets.DOCKER_REPO }}/moment_film-spring
+        run: docker push ${{ secrets.DOCKER_REPO }}/moment-film-spring
 
       - name: Deploy to server
         uses: appleboy/ssh-action@master
